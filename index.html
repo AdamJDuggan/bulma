@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css">
+    <title>Bulma playground</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADINGS -->
+        <!-- Blocks gives margin -->
+        <div class="block">
+            <!-- SIZES Bulma removes font size for all tags -->
+            <h1 class="title">Regular title</h1>
+            <h1 class="subtitle">Default subtitle</h1>
+            <h1 class="title is-1">title is-1</h1>
+            <h1 class="title is-2">title is-2</h1>
+            <h1 class="title is-3">title is-3</h1>
+        </div>
+        <hr />
+        <div class="block">
+            <p class="content is-small">This paragraph has the 'content is-small' class</p>
+            <p class="content is-medium">This paragraph has the 'content is-medium' class</p>
+            <p class="content is-large">This paragraph has the 'content is-large' class</p>
+        </div>
+
+        <hr />
+        <!-- BUTTONS -->
+        <div class="block">
+            <button class="button">button</button>
+            <button class="button is-white">button is-white</button>
+            <button class="button is-light">button is-light</button>
+            <button class="button is-dark">button is-dark</button>
+        </div>
+        <div class="block">
+            <button class="button is-primary is-small">Primary is-small</button>
+            <button class="button is-info is-medium">Info is-medium</button>
+            <button class="button is-success is-large">Success is-large</button>
+            <button class="button is-warning">Warning</button>
+            <button class="button is-danger">Danger</button>
+        </div>
+        <div class="block">
+            <button class="button is-warning is-inverted">Warning is-inverted</button>
+            <button class="button is-link is-outlined">button is-link is-outlined</button>
+        </div>
+        <div class="block">
+            <button class="button is-hovered">Button is-hovered</button>
+            <button class="button is-focused">Button is-focused</button>
+            <button class="button is-active">Button is-active</button>
+            <button class="button is-loading">Button is-loading</button>
+            <button class="button" disabled>Disabled</button>
+        </div>
+
+
+        <!-- BOX -->
+        <div class="block">
+            <div class="box">
+                <h1 class="title">Inside a box</h1>
+                <p>Box gives padding and shadow</p>
+            </div>
+        </div>
+        <!-- Notifications -->
+        <div class="block">
+            <div class="notification is-success">
+                <button class="delete"></button>
+                This is a notification with 'delete' class button
+            </div>
+        </div>
+        <div class="block">
+            <span class="tag is-info">This is a tag class in a span<button class="delete"></button></span>
+        </div>
+
+        <!-- Messages -->
+        <article class="message is-warning">
+            <div class="message-header">Message header inside message</div>
+            <div class="message-body">This is the message body</div>
+        </article>
+
+        <!-- Navbar -->
+        <div class="block">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+
+
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item">
+                            Home
+                        </a>
+
+                        <a class="navbar-item">
+                            Documentation
+                        </a>
+
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                More
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">
+                                    About
+                                </a>
+                                <a class="navbar-item">
+                                    Jobs
+                                </a>
+                                <a class="navbar-item">
+                                    Contact
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-primary">
+                                    <strong>Sign up</strong>
+                                </a>
+                                <a class="button is-light">
+                                    Log in
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <hr />
+
+            <!-- Side menu -->
+            <div class="block">
+                <aside class="menu">
+                    <p class="menu-label">Label 1 for menu class</p>
+                    <ul class="menu-list">
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 1</a></li>
+                    </ul>
+                    <p class="menu-label">Label 2 for menu class</p>
+                    <ul class="menu-list">
+                        <li>
+                            <a class="is-active" href="">Link 2 (has is-active class)</a>
+                            <ul>
+                                <li><a href="">Sub link 2</a></li>
+                                <li><a href="">Sub link 2</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="">Link 2</a></li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- Hero -->
+            <div class="block">
+                <section class="hero is-dark">
+                    <div class="hero-body">
+                        <div class="container">
+                            <h1 class="title">Hero title</h1>
+                            <h2 class="subtitle">Hero subtitle. Usually hero's stretch across width of device so
+                                we put a container inside the hero-body
+                            </h2>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Card/Panel -->
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        Component
+                    </p>
+                    <a href="#" class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                        <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <p class="card-footer-item">
+                        <span>Share on <a href=""><i class="fa fa-twitter"></i></a>Twitter</span>
+                    </p>
+                </footer>
+            </div>
+            <hr />
+
+            <!-- Pagination -->
+            <div class="block">
+                <h1 class="title">Pagination</h1>
+                <nav class="pagination">
+                    <a href="" class="pagination-previous" disabled>Previous page</a>
+                    <a href="" class="pagination-next">Next page</a>
+                    <ul class="pagination-list">
+                        <a href="" class="pagination-link is-current">1</a>
+                        <a href="" class="pagination-link">2</a>
+                        <a href="" class="pagination-link">3</a>
+                    </ul>
+                </nav>
+            </div>
+            <hr />
+            <!-- Level -->
+            <div class="block">
+                <h1 class="title">Level</h1>
+                <nav class="level">
+                    <!-- Left side -->
+                    <div class="level-left">
+                        <div class="level-item">
+                            <p class="subtitle is-5">
+                                <strong>123</strong> posts
+                            </p>
+                        </div>
+                        <div class="level-item">
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <input class="input" type="text" placeholder="Find a post">
+                                </p>
+                                <p class="control">
+                                    <button class="button">
+                                        Search
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="level-right">
+                        <p class="level-item"><strong>All</strong></p>
+                        <p class="level-item"><a>Published</a></p>
+                        <p class="level-item"><a>Drafts</a></p>
+                        <p class="level-item"><a>Deleted</a></p>
+                        <p class="level-item"><a class="button is-success">New</a></p>
+                    </div>
+                </nav>
+            </div>
+            <hr />
+            <!-- Forms  -->
+            <div class="block">
+                <h1 class="title">Forms</h1>
+
+                <form>
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <input type="text" placeholder="Enter name" class="input">
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <input type="text" placeholder="Enter name" class="input is-danger">
+                    </div>
+                    <div class="field">
+                        <label class="label">Select</label>
+                        <div class="select">
+                            <select>
+                                <option>Select dropdown</option>
+                                <option>With options</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Attached -->
+            <div class="block">
+                <div class="field has-addons">
+                    <p class="control"><input placeholder="field has addons" class="input"></p>
+                    <p class="control"><a href="" class="button is-info">Search</a></p>
+                </div>
+            </div>
+
+            <!-- Grid system -->
+            <div class="block">
+                <h1 class="title">Grid system</h1>
+                <h2 class="subtitle">div with columns class is like a row in bootstrap.
+                    Good for looping through data coming in but you dont know number
+                </h2>
+                <div class="columns">
+                    <div class="column is-2">
+                        <p class="notification">First column is-2</p>
+                    </div>
+                    <div class="column is-8">
+                        <p class="notification">Second column is-8</p>
+                    </div>
+                    <div class="column is-2">
+                        <p class="notification">Third column is-2</p>
+                    </div>
+
+                </div>
+                <div class="columns">
+                    <div class="column is-three-quarters">
+                        <p class="notification">First column is-three-quaters</p>
+                    </div>
+                    <div class="column">
+                        <p class="notification">Second column</p>
+                    </div>
+                    <div class="column">
+                        <p class="notification">Third column</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div style="margin-top: 500px"></div>
+    </div>
+</body>
+
+</html>
